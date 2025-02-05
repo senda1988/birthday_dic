@@ -1,3 +1,7 @@
+# Der Code erstellt eine Flask-Webanwendung, die Benutzerdaten (mit Namen und Geburtsdatum) aus einer JSON-Datei lädt und speichert.
+# Route /users (GET) Abrufen des Geburtstags eines Benutzers anhand des Namens
+# Route /users/<id> (PUT) Aktualisieren des Geburtstags eines Benutzers anhand seiner ID.
+# Alle Änderungen und Daten werden in einer lokalen JSON-Datei gespeichert, die beim Start geladen wird.
 from flask import Flask, request
 from classes.birthday_d import users
 
