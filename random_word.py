@@ -1,3 +1,5 @@
+# Der Code liest Wörter aus der Datei sowpods.txt, speichert sie in einer Liste und gibt eines zufällig aus.
+
 import random
 
 
@@ -7,12 +9,10 @@ def random_word():
         line = f.readline().strip()
         list_word.append(line)
         while line:
-            # do something to the line, for example
-            # saving it to disk
             line = f.readline().strip()
             list_word.append(line)
 
-    random_word_index = random.randint(0, len(list_word))
+    random_word_index = random.randint(0, len(list_word) - 1)
 
     print(list_word[random_word_index])
 
